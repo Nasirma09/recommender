@@ -1,0 +1,9 @@
+<h1>Query Hub</h1>
+
+<%= form_for :queries, url: find_recommendation_path, method: :get do |query| %>
+    <p>
+        <%= query.label "Write query here:" %>
+        <%= query.text_field :product_id %>
+        <%= query.submit "Enter Query" %>
+    </p>
+<% end %>

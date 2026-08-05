@@ -1,0 +1,2 @@
+class RecommendationInteractions < ApplicationRecord
+end
