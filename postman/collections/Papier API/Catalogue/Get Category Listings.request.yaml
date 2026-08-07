@@ -1,6 +1,0 @@
-$kind: http-request
-url: "{{base_url}}/categories"
-method: GET
-headers:
-  X-Store-Code: gb
-order: 2000
