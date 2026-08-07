@@ -1,0 +1,18 @@
+.uploaders__main {
+    display: flex;
+    background-color: rgb(252, 213, 155);
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+}
+
+.uploaders__button {
+    display: inline-block;
+    background-color: rgb(4, 0, 56);
+    color: white;
+    padding: 4px 12px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial;
+    border-radius: 8px;
+}

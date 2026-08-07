@@ -1,13 +1,12 @@
+<head>
+    <%= stylesheet_link_tag 'uploaders', media: 'all', data: { turbolinks: false } %>
+</head>
+
 <h1>Uploader</h1>
-<%= form_for :uploaders, url: uploaders_path do |f| %>
-    <p>
-        <%= f.submit "Upload Data" %>
-    </p>
 
-<% end %>
+    <%= form_tag uploaders_path, multipart: true, class: "uploaders__main" do %>
+        <%= file_field_tag :file, class: "uploaders__button" %>
+        <%= submit_tag "Import", class: "uploaders__button" %>
+    <% end %>
 
-<%= form_tag uploaders_path, multipart: true, class: "ui form" do %>
-  <%= file_field_tag :file, class: "ui button green" %>
-  <%= submit_tag "Import", class: "ui button" %>
-<% end %>
 

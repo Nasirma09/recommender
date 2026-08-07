@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{base_url}}/carts/25/set_address"
+method: POST
+headers:
+  X-Store-Code: gb
+queryParams:
+  - key: shippingAddressId
+    value: "15"
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "shippingAddressId": 15
+    }
+order: 4000

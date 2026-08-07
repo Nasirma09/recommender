@@ -8,3 +8,15 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+body {
+    background-color: beige;
+    color:black;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}

@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/orders/5"
+method: GET
+headers:
+  X-Store-Code: gb
+order: 2000

@@ -1,2 +1,10 @@
+<head>
+    <%= stylesheet_link_tag 'homepage', media: 'all', data: { turbolinks: false } %>
+</head>
+
 <h1>Home</h1>
+        <div class="homepage__link">
+            <%=  link_to "Uploaders", "http://localhost:3000/uploaders", class: "homepage__element", target: "_blank" %><br/>
+            <%=  link_to "Query Hub",  "http://localhost:3000/recommender_query", class: "homepage__element", target: "_blank" %>
+        </div>
 

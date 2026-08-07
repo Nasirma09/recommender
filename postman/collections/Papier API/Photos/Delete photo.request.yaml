@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{base_url}}/photos/1"
+method: DELETE
+headers:
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: text
+  content: ""
+order: 5000

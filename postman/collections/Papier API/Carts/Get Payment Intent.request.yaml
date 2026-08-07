@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/carts/24/payment_intent"
+method: GET
+headers:
+  X-Store-Code: gb
+order: 7000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/user/me/addresses"
+method: GET
+headers:
+  Authorization: Bearer {{bearer_token}}
+order: 1000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/photos/uploads/abort"
+method: POST
+headers:
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: json
+  content: |-
+    {
+        "uploadId": "{{photo_upload_id}}",
+        "key": "{{photo_bucket_key}}"
+    }
+order: 5000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{base_url}}/carts/25/remove_voucher"
+method: POST
+headers:
+  X-Store-Code: gb
+queryParams:
+  - key: code
+    value: PAPIER123
+    disabled: true
+body:
+  type: json
+  content: |-
+    {
+        "code": "PAPIER123"
+    }
+order: 6000

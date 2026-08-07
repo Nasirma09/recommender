@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/user/me/delete-request"
+method: POST
+headers:
+  Authorization: Bearer {{bearer_token}}
+order: 4000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/user/me"
+method: PUT
+headers:
+  Authorization: Bearer {{bearer_token}}
+body:
+  type: json
+  content: |-
+    {
+    	"email": "test2@papier.com",
+        "first_name": "New name",
+        "last_name": "New last name"
+    }
+order: 5000

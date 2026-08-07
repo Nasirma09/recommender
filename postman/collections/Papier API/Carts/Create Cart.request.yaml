@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{base_url}}/carts"
+method: POST
+headers:
+  X-Store-Code: gb
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{auth_secret_09o8}}"
+order: 2000
