@@ -1,0 +1,3 @@
+class ItemSimilarities < ApplicationRecord
+    
+end

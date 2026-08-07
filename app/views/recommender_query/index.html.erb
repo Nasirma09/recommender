@@ -1,0 +1,53 @@
+<head>
+    <%= stylesheet_link_tag 'recommender_query', media: 'all', data: { turbolinks: false } %>
+</head>
+
+<h1>Query Hub</h1>
+
+<%= form_for :queries, url: find_recommendation_path, method: :get do |query| %>
+    <p>
+        <%= query.label "Write ID here:" %>
+        <%= query.text_field :product_id %>
+        <%= query.submit "Enter ID" %>
+    </p>
+<% end %>
+
+<a href="http://localhost:3000/recommender_query">Clear Search</a>
+<br/>
+<br/>
+
+<% if @result.nil? %>
+    Recommendations will appear here.
+<% elsif @result.any? %>
+    <div class="recommender_query__original_product">
+        Your search: <%= @original_product_information['name'] %>
+        <img src="<%= @original_product_information['imageUrl'] %>">
+    </div>
+    <% @result.each do |row| %>
+        <%= row.neighbour_item_id %>, 
+        <%= row.shared_user_count %>, 
+        <%= row.score %>
+        <br/>
+    <% end %>
+    <br/>
+    Other products you might like:
+<% else %>
+    No recommendations found.
+<% end %>
+<div class="recommender_query__flex">
+    <% if @product_details.nil? %>
+    
+    <% elsif @product_details.any? %>
+        <% @product_details.each do |row| %>
+            <div class="recommender_query__product_info">
+                <%= row["name"] %>
+                <img src="<%= row['imageUrl'] %>">
+            </div>
+            <br/>
+        <% end %>
+    <% end %>
+</div>
+
+<%#= @product_details.inspect %>
+
+

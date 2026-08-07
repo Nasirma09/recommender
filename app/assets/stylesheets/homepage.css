@@ -1,0 +1,17 @@
+.homepage__link {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(252, 213, 155);
+    justify-content: center;
+}
+
+.homepage__element {
+    background-color: rgb(4, 0, 56);
+    text-decoration:none;
+    color: white;
+    padding: 12px;
+    margin: 4px;
+    text-align: center;
+    border-radius: 8px;
+}
+

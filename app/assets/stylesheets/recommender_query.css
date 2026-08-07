@@ -1,0 +1,22 @@
+.recommender_query__flex {
+    display: flex;
+    margin: 15px;
+}
+
+.recommender_query__product_info {
+    display: flex;
+    width: 150px;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.recommender_query__original_product {
+    display: flex;
+    flex-direction: column;
+    img {
+        max-height: 150px;
+        max-width: fit-content;
+    }
+}
